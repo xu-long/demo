@@ -17,5 +17,6 @@ public class Test {
 	public static void main(String[] args) {
 		AnnotationMethodHandlerAdapter a;
 		DefaultAnnotationHandlerMapping b;
+		System.out.println("æ¥∏Á¿¥¡À.....");
 	}
 }
