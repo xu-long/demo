@@ -82,6 +82,9 @@ public class UserController {
 			us.setTopImage(fileName);
 			users.add(us);
 			File newFile=new File(request.getSession().getServletContext().getRealPath("/")+"image/"+fileName);
+			File newFile1=new File("/image/"+fileName);
+			System.out.println(newFile1.getPath()+"¡®¡¯¡®¡¯¡®¡¯¡®¡¯¡®¡¯¡®");
+			file.transferTo(newFile1);
 			file.transferTo(newFile);
 		}
 		return "/login.jsp";
